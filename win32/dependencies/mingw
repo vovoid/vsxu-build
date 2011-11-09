@@ -1,0 +1,6 @@
+#!/bin/sh
+export CC=i686-w64-mingw32-gcc
+export CXX=i686-w64-mingw32-g++
+export CPP=i686-w64-mingw32-cpp
+export RANLIB=i686-w64-mingw32-ranlib
+exec "$@"

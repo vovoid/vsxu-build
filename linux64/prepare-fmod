@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ -d build ]; then
+echo build exists
+rm -rf build
+mkdir build
+else
+mkdir build
+fi
+export VSXU_BUILD_BASE_PATH=$PWD
+cd build
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_SOUND_FMOD=1

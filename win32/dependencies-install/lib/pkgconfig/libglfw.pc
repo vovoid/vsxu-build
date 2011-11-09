@@ -1,0 +1,11 @@
+prefix=/home/jaw/vsxu/build-dependencies-mingw-install/
+exec_prefix=/home/jaw/vsxu/build-dependencies-mingw-install/
+libdir=/home/jaw/vsxu/build-dependencies-mingw-install//lib
+includedir=/home/jaw/vsxu/build-dependencies-mingw-install//include
+
+Name: GLFW
+Description: A portable framework for OpenGL development
+Version: 2.7
+URL: http://www.glfw.org/
+Libs: -L${libdir} -lglfw -lglu32 -lopengl32 -lm -s -mwindows -e _mainCRTStartup
+Cflags: -I${includedir} -mwin32

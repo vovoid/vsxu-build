@@ -1,0 +1,5 @@
+# Hashes of file build rules.
+a0f66cd72470dd77529a565671f35991 CMakeFiles/libpng-config_COPY
+a0f66cd72470dd77529a565671f35991 CMakeFiles/libpng.pc_COPY
+5329277701078d5f28d4a9251220e23a bin/libpng-config
+f61f079ec4c5db10ee21d389029c7923 bin/libpng.pc
