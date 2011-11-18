@@ -1,1 +1,1 @@
--I/home/jaw/vsxu/build-dependencies-mingw-install/include -I/home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build -I/home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5 
+-I/home/jaw/vsxu/build/win32/dependencies-install/include -I/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build -I/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5 

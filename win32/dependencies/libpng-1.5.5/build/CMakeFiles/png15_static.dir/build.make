@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5
+CMAKE_SOURCE_DIR = /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build
+CMAKE_BINARY_DIR = /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/png15_static.dir/depend.make
@@ -49,17 +49,17 @@ include CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/png.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/png.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/png.obj: ../png.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/png.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/png.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/png.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/png.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/png.c
 
 CMakeFiles/png15_static.dir/png.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/png.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/png.c > CMakeFiles/png15_static.dir/png.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/png.c > CMakeFiles/png15_static.dir/png.i
 
 CMakeFiles/png15_static.dir/png.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/png.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/png.c -o CMakeFiles/png15_static.dir/png.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/png.c -o CMakeFiles/png15_static.dir/png.s
 
 CMakeFiles/png15_static.dir/png.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/png.obj.requires
@@ -73,17 +73,17 @@ CMakeFiles/png15_static.dir/png.obj.provides.build: CMakeFiles/png15_static.dir/
 CMakeFiles/png15_static.dir/pngerror.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngerror.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngerror.obj: ../pngerror.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngerror.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngerror.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngerror.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngerror.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngerror.c
 
 CMakeFiles/png15_static.dir/pngerror.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngerror.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngerror.c > CMakeFiles/png15_static.dir/pngerror.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngerror.c > CMakeFiles/png15_static.dir/pngerror.i
 
 CMakeFiles/png15_static.dir/pngerror.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngerror.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngerror.c -o CMakeFiles/png15_static.dir/pngerror.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngerror.c -o CMakeFiles/png15_static.dir/pngerror.s
 
 CMakeFiles/png15_static.dir/pngerror.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngerror.obj.requires
@@ -97,17 +97,17 @@ CMakeFiles/png15_static.dir/pngerror.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngget.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngget.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngget.obj: ../pngget.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngget.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngget.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngget.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngget.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngget.c
 
 CMakeFiles/png15_static.dir/pngget.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngget.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngget.c > CMakeFiles/png15_static.dir/pngget.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngget.c > CMakeFiles/png15_static.dir/pngget.i
 
 CMakeFiles/png15_static.dir/pngget.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngget.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngget.c -o CMakeFiles/png15_static.dir/pngget.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngget.c -o CMakeFiles/png15_static.dir/pngget.s
 
 CMakeFiles/png15_static.dir/pngget.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngget.obj.requires
@@ -121,17 +121,17 @@ CMakeFiles/png15_static.dir/pngget.obj.provides.build: CMakeFiles/png15_static.d
 CMakeFiles/png15_static.dir/pngmem.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngmem.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngmem.obj: ../pngmem.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngmem.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngmem.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngmem.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngmem.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngmem.c
 
 CMakeFiles/png15_static.dir/pngmem.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngmem.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngmem.c > CMakeFiles/png15_static.dir/pngmem.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngmem.c > CMakeFiles/png15_static.dir/pngmem.i
 
 CMakeFiles/png15_static.dir/pngmem.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngmem.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngmem.c -o CMakeFiles/png15_static.dir/pngmem.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngmem.c -o CMakeFiles/png15_static.dir/pngmem.s
 
 CMakeFiles/png15_static.dir/pngmem.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngmem.obj.requires
@@ -145,17 +145,17 @@ CMakeFiles/png15_static.dir/pngmem.obj.provides.build: CMakeFiles/png15_static.d
 CMakeFiles/png15_static.dir/pngpread.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngpread.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngpread.obj: ../pngpread.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngpread.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngpread.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngpread.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngpread.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngpread.c
 
 CMakeFiles/png15_static.dir/pngpread.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngpread.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngpread.c > CMakeFiles/png15_static.dir/pngpread.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngpread.c > CMakeFiles/png15_static.dir/pngpread.i
 
 CMakeFiles/png15_static.dir/pngpread.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngpread.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngpread.c -o CMakeFiles/png15_static.dir/pngpread.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngpread.c -o CMakeFiles/png15_static.dir/pngpread.s
 
 CMakeFiles/png15_static.dir/pngpread.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngpread.obj.requires
@@ -169,17 +169,17 @@ CMakeFiles/png15_static.dir/pngpread.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngread.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngread.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngread.obj: ../pngread.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngread.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngread.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngread.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngread.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngread.c
 
 CMakeFiles/png15_static.dir/pngread.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngread.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngread.c > CMakeFiles/png15_static.dir/pngread.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngread.c > CMakeFiles/png15_static.dir/pngread.i
 
 CMakeFiles/png15_static.dir/pngread.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngread.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngread.c -o CMakeFiles/png15_static.dir/pngread.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngread.c -o CMakeFiles/png15_static.dir/pngread.s
 
 CMakeFiles/png15_static.dir/pngread.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngread.obj.requires
@@ -193,17 +193,17 @@ CMakeFiles/png15_static.dir/pngread.obj.provides.build: CMakeFiles/png15_static.
 CMakeFiles/png15_static.dir/pngrio.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngrio.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngrio.obj: ../pngrio.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngrio.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrio.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrio.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrio.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrio.c
 
 CMakeFiles/png15_static.dir/pngrio.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngrio.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrio.c > CMakeFiles/png15_static.dir/pngrio.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrio.c > CMakeFiles/png15_static.dir/pngrio.i
 
 CMakeFiles/png15_static.dir/pngrio.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngrio.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrio.c -o CMakeFiles/png15_static.dir/pngrio.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrio.c -o CMakeFiles/png15_static.dir/pngrio.s
 
 CMakeFiles/png15_static.dir/pngrio.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngrio.obj.requires
@@ -217,17 +217,17 @@ CMakeFiles/png15_static.dir/pngrio.obj.provides.build: CMakeFiles/png15_static.d
 CMakeFiles/png15_static.dir/pngrtran.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngrtran.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngrtran.obj: ../pngrtran.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngrtran.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrtran.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrtran.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrtran.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrtran.c
 
 CMakeFiles/png15_static.dir/pngrtran.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngrtran.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrtran.c > CMakeFiles/png15_static.dir/pngrtran.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrtran.c > CMakeFiles/png15_static.dir/pngrtran.i
 
 CMakeFiles/png15_static.dir/pngrtran.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngrtran.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrtran.c -o CMakeFiles/png15_static.dir/pngrtran.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrtran.c -o CMakeFiles/png15_static.dir/pngrtran.s
 
 CMakeFiles/png15_static.dir/pngrtran.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngrtran.obj.requires
@@ -241,17 +241,17 @@ CMakeFiles/png15_static.dir/pngrtran.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngrutil.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngrutil.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngrutil.obj: ../pngrutil.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngrutil.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrutil.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrutil.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngrutil.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrutil.c
 
 CMakeFiles/png15_static.dir/pngrutil.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngrutil.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrutil.c > CMakeFiles/png15_static.dir/pngrutil.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrutil.c > CMakeFiles/png15_static.dir/pngrutil.i
 
 CMakeFiles/png15_static.dir/pngrutil.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngrutil.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngrutil.c -o CMakeFiles/png15_static.dir/pngrutil.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngrutil.c -o CMakeFiles/png15_static.dir/pngrutil.s
 
 CMakeFiles/png15_static.dir/pngrutil.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngrutil.obj.requires
@@ -265,17 +265,17 @@ CMakeFiles/png15_static.dir/pngrutil.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngset.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngset.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngset.obj: ../pngset.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngset.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngset.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngset.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngset.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngset.c
 
 CMakeFiles/png15_static.dir/pngset.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngset.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngset.c > CMakeFiles/png15_static.dir/pngset.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngset.c > CMakeFiles/png15_static.dir/pngset.i
 
 CMakeFiles/png15_static.dir/pngset.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngset.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngset.c -o CMakeFiles/png15_static.dir/pngset.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngset.c -o CMakeFiles/png15_static.dir/pngset.s
 
 CMakeFiles/png15_static.dir/pngset.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngset.obj.requires
@@ -289,17 +289,17 @@ CMakeFiles/png15_static.dir/pngset.obj.provides.build: CMakeFiles/png15_static.d
 CMakeFiles/png15_static.dir/pngtrans.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngtrans.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngtrans.obj: ../pngtrans.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngtrans.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngtrans.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngtrans.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngtrans.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngtrans.c
 
 CMakeFiles/png15_static.dir/pngtrans.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngtrans.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngtrans.c > CMakeFiles/png15_static.dir/pngtrans.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngtrans.c > CMakeFiles/png15_static.dir/pngtrans.i
 
 CMakeFiles/png15_static.dir/pngtrans.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngtrans.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngtrans.c -o CMakeFiles/png15_static.dir/pngtrans.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngtrans.c -o CMakeFiles/png15_static.dir/pngtrans.s
 
 CMakeFiles/png15_static.dir/pngtrans.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngtrans.obj.requires
@@ -313,17 +313,17 @@ CMakeFiles/png15_static.dir/pngtrans.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngwio.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngwio.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngwio.obj: ../pngwio.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngwio.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwio.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwio.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwio.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwio.c
 
 CMakeFiles/png15_static.dir/pngwio.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngwio.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwio.c > CMakeFiles/png15_static.dir/pngwio.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwio.c > CMakeFiles/png15_static.dir/pngwio.i
 
 CMakeFiles/png15_static.dir/pngwio.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngwio.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwio.c -o CMakeFiles/png15_static.dir/pngwio.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwio.c -o CMakeFiles/png15_static.dir/pngwio.s
 
 CMakeFiles/png15_static.dir/pngwio.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngwio.obj.requires
@@ -337,17 +337,17 @@ CMakeFiles/png15_static.dir/pngwio.obj.provides.build: CMakeFiles/png15_static.d
 CMakeFiles/png15_static.dir/pngwrite.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngwrite.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngwrite.obj: ../pngwrite.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngwrite.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwrite.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwrite.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwrite.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwrite.c
 
 CMakeFiles/png15_static.dir/pngwrite.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngwrite.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwrite.c > CMakeFiles/png15_static.dir/pngwrite.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwrite.c > CMakeFiles/png15_static.dir/pngwrite.i
 
 CMakeFiles/png15_static.dir/pngwrite.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngwrite.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwrite.c -o CMakeFiles/png15_static.dir/pngwrite.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwrite.c -o CMakeFiles/png15_static.dir/pngwrite.s
 
 CMakeFiles/png15_static.dir/pngwrite.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngwrite.obj.requires
@@ -361,17 +361,17 @@ CMakeFiles/png15_static.dir/pngwrite.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngwtran.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngwtran.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngwtran.obj: ../pngwtran.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngwtran.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwtran.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwtran.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwtran.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwtran.c
 
 CMakeFiles/png15_static.dir/pngwtran.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngwtran.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwtran.c > CMakeFiles/png15_static.dir/pngwtran.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwtran.c > CMakeFiles/png15_static.dir/pngwtran.i
 
 CMakeFiles/png15_static.dir/pngwtran.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngwtran.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwtran.c -o CMakeFiles/png15_static.dir/pngwtran.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwtran.c -o CMakeFiles/png15_static.dir/pngwtran.s
 
 CMakeFiles/png15_static.dir/pngwtran.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngwtran.obj.requires
@@ -385,17 +385,17 @@ CMakeFiles/png15_static.dir/pngwtran.obj.provides.build: CMakeFiles/png15_static
 CMakeFiles/png15_static.dir/pngwutil.obj: CMakeFiles/png15_static.dir/flags.make
 CMakeFiles/png15_static.dir/pngwutil.obj: CMakeFiles/png15_static.dir/includes_C.rsp
 CMakeFiles/png15_static.dir/pngwutil.obj: ../pngwutil.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/png15_static.dir/pngwutil.obj"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwutil.obj   -c /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwutil.c
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/png15_static.dir/pngwutil.obj   -c /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwutil.c
 
 CMakeFiles/png15_static.dir/pngwutil.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/png15_static.dir/pngwutil.i"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwutil.c > CMakeFiles/png15_static.dir/pngwutil.i
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwutil.c > CMakeFiles/png15_static.dir/pngwutil.i
 
 CMakeFiles/png15_static.dir/pngwutil.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/png15_static.dir/pngwutil.s"
-	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/pngwutil.c -o CMakeFiles/png15_static.dir/pngwutil.s
+	/usr/bin/i686-w64-mingw32-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/pngwutil.c -o CMakeFiles/png15_static.dir/pngwutil.s
 
 CMakeFiles/png15_static.dir/pngwutil.obj.requires:
 .PHONY : CMakeFiles/png15_static.dir/pngwutil.obj.requires
@@ -474,6 +474,6 @@ CMakeFiles/png15_static.dir/clean:
 .PHONY : CMakeFiles/png15_static.dir/clean
 
 CMakeFiles/png15_static.dir/depend:
-	cd /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5 /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5 /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles/png15_static.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5 /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5 /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/png15_static.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/png15_static.dir/depend
 

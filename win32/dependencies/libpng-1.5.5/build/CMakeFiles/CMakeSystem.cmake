@@ -1,4 +1,4 @@
-INCLUDE("/home/jaw/vsxu/Toolchain-mingw32.cmake")
+INCLUDE("/home/jaw/vsxu/build/win32/cmake/Toolchain-mingw32.cmake")
 
 SET(CMAKE_SYSTEM "Windows")
 SET(CMAKE_SYSTEM_NAME "Windows")

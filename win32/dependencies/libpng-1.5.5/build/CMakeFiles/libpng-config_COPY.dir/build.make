@@ -32,10 +32,10 @@ CMAKE_COMMAND = /usr/bin/cmake
 RM = /usr/bin/cmake -E remove -f
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5
+CMAKE_SOURCE_DIR = /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build
+CMAKE_BINARY_DIR = /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build
 
 # Utility rule file for libpng-config_COPY.
 
@@ -43,10 +43,10 @@ CMakeFiles/libpng-config_COPY: bin/libpng-config
 
 bin/libpng-config: libpng15.dll
 bin/libpng-config: libpng15.a
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating bin/libpng-config, libpng-config"
-	/usr/bin/cmake -E copy /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/libpng15-config bin/libpng-config
-	/usr/bin/cmake -E copy /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/libpng15-config /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/libpng-config
+	/usr/bin/cmake -E copy /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/libpng15-config bin/libpng-config
+	/usr/bin/cmake -E copy /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/libpng15-config /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/libpng-config
 
 libpng-config: bin/libpng-config
 
@@ -65,6 +65,6 @@ CMakeFiles/libpng-config_COPY.dir/clean:
 .PHONY : CMakeFiles/libpng-config_COPY.dir/clean
 
 CMakeFiles/libpng-config_COPY.dir/depend:
-	cd /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5 /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5 /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build /home/jaw/vsxu/vsxu-dependencies/libpng-1.5.5/build/CMakeFiles/libpng-config_COPY.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5 /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5 /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build /home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/libpng-config_COPY.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/libpng-config_COPY.dir/depend
 

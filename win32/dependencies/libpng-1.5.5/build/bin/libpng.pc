@@ -1,7 +1,7 @@
-prefix=/home/jaw/vsxu/build-dependencies-mingw-install
-exec_prefix=/home/jaw/vsxu/build-dependencies-mingw-install
-libdir=/home/jaw/vsxu/build-dependencies-mingw-install/lib
-includedir=/home/jaw/vsxu/build-dependencies-mingw-install/include/libpng15
+prefix=/home/jaw/vsxu/build/win32/dependencies-install
+exec_prefix=/home/jaw/vsxu/build/win32/dependencies-install
+libdir=/home/jaw/vsxu/build/win32/dependencies-install/lib
+includedir=/home/jaw/vsxu/build/win32/dependencies-install/include/libpng15
 
 Name: libpng
 Description: Loads and saves PNG files

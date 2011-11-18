@@ -1,43 +1,26 @@
-
+zlib:
+1. 
+- copy win32/Makefile.gcc into the source directory
+- edit it to set prefix and PREFIX (install dir / compiler prefix) correctly
+- make install
+2. in the installed dir, comment out the ZLIB_DLL part in the zconf.h since we couldn't build that anyway.
 
 glfw:
-TARGET=i686-w64-mingw32- PREFIX=~/vsxu/build-dependencies-mingw-install/ make cross-mgw-install
+TARGET=i686-w64-mingw32- PREFIX=/home/jaw/vsxu/build/win32/dependencies-install make cross-mgw-install
 
 glew:
-GLEW_DEST=~/vsxu/build-dependencies-mingw-install/ make SYSTEM=linux-i686-w64-mingw32 install
+GLEW_DEST=/home/jaw/vsxu/build/win32/dependencies-install make SYSTEM=linux-i686-w64-mingw32 install
 
 jpeg:
-./configure --host=i686-w64-mingw32 --prefix=/home/jaw/vsxu/build-dependencies-mingw-install
+./configure --host=i686-w64-mingw32 --prefix=/home/jaw/vsxu/build/win32/dependencies-install
 make
 make install
-
-zlib:
-cd zlib
-mingw ./configure --prefix=/home/jaw/vsxu/build-dependencies-mingw-install
-1. now edit the file to remove the shared libs from compilation and installation.
-  Near the top of the file:
-  - LIBS=$(STATICLIB) $(SHAREDLIB)
-  + LIBS=$(STATICLIB)
-  In the "install-libs" target, comment out the following lines:
-    -@if [ ! -d $(DESTDIR)$(sharedlibdir) ]; then mkdir -p $(DESTDIR)$(sharedlibdir); fi
-    cp $(SHAREDLIBV) $(DESTDIR)$(sharedlibdir)
-    -@cd $(DESTDIR)$(sharedlibdir); if test "$(SHAREDLIBV)" -a -f $(SHAREDLIBV); then \
-      chmod 755 $(SHAREDLIBV); \
-      rm -f $(SHAREDLIB) $(SHAREDLIBM); \
-      ln -s $(SHAREDLIBV) $(SHAREDLIB); \
-      ln -s $(SHAREDLIBV) $(SHAREDLIBM); \
-      ($(LDCONFIG) || true)  >/dev/null 2>&1; \
-    fi
-
-  mingw make
-  mingw make install
-2. in the installed dir, comment out the ZLIB_DLL part in the zconf.h since we couldn't build that anyway.
 
 png: 
   cd png
   mkdir build
   cd build
-  cmake -DCMAKE_TOOLCHAIN_FILE=~/vsxu/Toolchain-mingw32.cmake -DCMAKE_INSTALL_PREFIX=~/vsxu/build-dependencies-mingw-install/ ..
+  cmake -DCMAKE_TOOLCHAIN_FILE=/home/jaw/vsxu/build/win32/cmake/Toolchain-mingw32.cmake -DCMAKE_INSTALL_PREFIX=/home/jaw/vsxu/build/win32/dependencies-install ..
   make
 
 pthreads:
@@ -52,6 +35,5 @@ pthreads:
   semaphore.h -> include
 
 
-
-
-
+After this is done, get into the lib dir of the install directory and remove all .dll.a and dll's
+to avoid find_package from finding the dll versions. We're aiming at a static linkage.
