@@ -1,0 +1,89 @@
+zlib:
+1. 
+- install mingw64 into /usr/bin
+- then configure zlib like this:
+    mingw64 ./configure --64 --prefix=/home/jaw/vsxu/build/win64/dependencies-install/ --static
+    make
+Now comment out the line copying the shared lib, as it doesn't exist, "make install" would fail because of it.
+    make install
+    
+2. in the installed dir, comment out the ZLIB_DLL part in the zconf.h since we couldn't build that anyway.
+
+
+freetype:
+  ./configure --host=x86_64-w64-mingw32 --prefix=/home/jaw/vsxu/build/win64/dependencies-install
+  make
+  make install
+  Remove the dll files.
+
+
+glfw:
+TARGET=x86_64-w64-mingw32- PREFIX=/home/jaw/vsxu/build/win64/dependencies-install make cross-mgw-install
+
+glew:
+
+add the file "Makefile.linux-x86_64-w64-mingw32" with the following content into the config dir of glew:
+# For cross-compiling from Linux to Windows x86 using mingw-w64
+# http://www.mingw.org/
+#
+# $ make SYSTEM=linux-i686-w64-mingw32
+#
+
+NAME = glew64
+CC = x86_64-w64-mingw32-gcc
+LD = x86_64-w64-mingw32-ld
+CFLAGS.SO = -DGLEW_BUILD
+LDFLAGS.GL = -lglu32 -lopengl32 -lgdi32 -luser32 -lkernel32
+WARN = -Wall -W
+POPT = -O2
+BIN.SUFFIX = .exe
+LIB.SONAME    = lib$(NAME).dll
+LIB.DEVLNK    = lib$(NAME).dll.a    # for mingw this is the dll import lib
+LIB.SHARED    = $(NAME).dll
+LIB.STATIC    = lib$(NAME).a        # the static lib will be broken (see CFLAGS.SO)
+LDFLAGS.SO    = -shared -soname $(LIB.SONAME) --out-implib lib/$(LIB.DEVLNK)
+LIB.SONAME.MX = lib$(NAME)mx.dll
+LIB.DEVLNK.MX = lib$(NAME)mx.dll.a  # for mingw this is the dll import lib
+LIB.SHARED.MX = $(NAME)mx.dll
+LIB.STATIC.MX = lib$(NAME)mx.a      # the static lib will be broken (see CFLAGS.SO)
+LDFLAGS.SO.MX = -shared -soname $(LIB.SONAME.MX) --out-implib lib/$(LIB.DEVLNK.MX)
+
+
+
+GLEW_DEST=/home/jaw/vsxu/build/win64/dependencies-install make SYSTEM=linux-x86_64-w64-mingw32 install
+
+jpeg:
+./configure --host=x86_64-w64-mingw32 --prefix=/home/jaw/vsxu/build/win64/dependencies-install
+make
+make install
+
+png: 
+  cd png
+  ...
+  hack the CmakeLists.txt; remove the find_package for zlib and add the following:
+  set(ZLIB_LIBRARY /home/jaw/vsxu/build/win64/dependencies-install/lib/libz.a)
+  set(ZLIB_INCLUDE_DIR /home/jaw/vsxu/build/win64/dependencies-install/include)
+  ...
+  mkdir build
+  cd build
+  cmake -DCMAKE_TOOLCHAIN_FILE=/home/jaw/vsxu/build/win64/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=/home/jaw/vsxu/build/win64/dependencies-install ..
+  make
+
+pthreads:
+  extract the source, rename the dir to w64 instead of w32
+  apply the patch file:
+  cd pthreads-w64-2-8-0-release
+  cp ../pthreads-w64-dream.patch .
+  patch -p1 < pthreads-w64-dream.patch
+  make -f GNUmakefile CROSS=x86_64-w64-mingw32- GC-inlined
+  
+  GNUmakefile has no install target; copy the following files:
+  pthreadGC2.dll -> bin
+  libpthreadGC2.a -> lib
+  pthread.h -> include
+  sched.h -> include
+  semaphore.h -> include
+
+
+After this is done, get into the lib dir of the install directory and remove all .dll.a and dll's
+to avoid find_package from finding the dll versions. We're aiming at a static linkage.
