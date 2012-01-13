@@ -18,6 +18,11 @@ make install
 
 png: 
   cd png
+  ...
+  hack the CmakeLists.txt; remove the find_package for zlib and add the following:
+  set(ZLIB_LIBRARY /home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a)
+  set(ZLIB_INCLUDE_DIR /home/jaw/vsxu/build/win32/dependencies-install/include)
+  ...
   mkdir build
   cd build
   cmake -DCMAKE_TOOLCHAIN_FILE=/home/jaw/vsxu/build/win32/cmake/Toolchain-mingw32.cmake -DCMAKE_INSTALL_PREFIX=/home/jaw/vsxu/build/win32/dependencies-install ..

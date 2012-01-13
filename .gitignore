@@ -4,3 +4,5 @@
 /linux64/install
 /win32/build
 /win32/install
+/win64/build
+/win64/install

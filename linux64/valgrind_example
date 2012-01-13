@@ -1,0 +1,1 @@
+valgrind --track-origins=yes --log-file=errorlog ./vsxu_artiste

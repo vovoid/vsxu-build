@@ -1,4 +1,0 @@
-/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/libpng-config_COPY.dir
-/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/libpng.pc_COPY.dir
-/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/png15.dir
-/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build/CMakeFiles/png15_static.dir

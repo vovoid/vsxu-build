@@ -9,7 +9,7 @@ Now comment out the line copying the shared lib, as it doesn't exist, "make inst
     
 2. in the installed dir, comment out the ZLIB_DLL part in the zconf.h since we couldn't build that anyway.
 
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 freetype:
   ./configure --host=x86_64-w64-mingw32 --prefix=/home/jaw/vsxu/build/win64/dependencies-install
   make
@@ -17,8 +17,7 @@ freetype:
   Remove the dll files.
 
 
-glfw:
-TARGET=x86_64-w64-mingw32- PREFIX=/home/jaw/vsxu/build/win64/dependencies-install make cross-mgw-install
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 glew:
 
@@ -49,13 +48,15 @@ LIB.STATIC.MX = lib$(NAME)mx.a      # the static lib will be broken (see CFLAGS.
 LDFLAGS.SO.MX = -shared -soname $(LIB.SONAME.MX) --out-implib lib/$(LIB.DEVLNK.MX)
 
 
+GLEW_DEST=/home/jaw/vsxu/build/win64/dependencies-install mingw64 make SYSTEM=linux-x86_64-w64-mingw32 install
 
-GLEW_DEST=/home/jaw/vsxu/build/win64/dependencies-install make SYSTEM=linux-x86_64-w64-mingw32 install
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 jpeg:
 ./configure --host=x86_64-w64-mingw32 --prefix=/home/jaw/vsxu/build/win64/dependencies-install
 make
 make install
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 png: 
   cd png
@@ -68,6 +69,8 @@ png:
   cd build
   cmake -DCMAKE_TOOLCHAIN_FILE=/home/jaw/vsxu/build/win64/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=/home/jaw/vsxu/build/win64/dependencies-install ..
   make
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 pthreads:
   extract the source, rename the dir to w64 instead of w32
@@ -83,6 +86,11 @@ pthreads:
   pthread.h -> include
   sched.h -> include
   semaphore.h -> include
+
+  Edit the pthread.h and remove the DLLEXPORT stuff.
+  Also symlink libpthreadGC2.a -> libpthread.a so that cmake can find it.
+  ** NOTE **
+  If Cmake can't find the lib, you have to unfortunately copy it into /usr/x86_64-w64-mingw32/lib/
 
 
 After this is done, get into the lib dir of the install directory and remove all .dll.a and dll's

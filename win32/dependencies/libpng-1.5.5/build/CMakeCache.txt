@@ -142,8 +142,8 @@ CMAKE_SKIP_RPATH:BOOL=NO
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/usr/bin/i686-w64-mingw32-strip
 
-//No help, variable specified on the command line.
-CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/jaw/vsxu/build/win32/cmake/Toolchain-mingw32.cmake
+//The CMake toolchain file
+CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/jaw/vsxu/build/win32/cmake/Toolchain-mingw32.cmake
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
@@ -160,44 +160,17 @@ EXECUTABLE_OUTPUT_PATH:PATH=
 //Single output directory for building all libraries.
 LIBRARY_OUTPUT_PATH:PATH=
 
-//FIXME
-PNGARG:BOOL=ON
-
-//Build with debug output
-PNG_DEBUG:BOOL=OFF
-
-//FIXME
-PNG_NO_CONSOLE_IO:BOOL=ON
-
-//FIXME
-PNG_NO_STDIO:BOOL=ON
-
-//Build shared lib
-PNG_SHARED:BOOL=ON
-
-//Build static lib
-PNG_STATIC:BOOL=ON
-
-//Build pngtest
-PNG_TESTS:BOOL=OFF
-
 //Path to a file.
-ZLIB_INCLUDE_DIR:PATH=/home/jaw/vsxu/build/win32/dependencies-install/include
+ZLIB_INCLUDE_DIR:PATH=ZLIB_INCLUDE_DIR-NOTFOUND
 
 //Path to a library.
-ZLIB_LIBRARY:FILEPATH=/home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a
+ZLIB_LIBRARY:FILEPATH=ZLIB_LIBRARY-NOTFOUND
 
 //Value Computed by CMake
 libpng_BINARY_DIR:STATIC=/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5/build
 
 //Value Computed by CMake
 libpng_SOURCE_DIR:STATIC=/home/jaw/vsxu/build/win32/dependencies/libpng-1.5.5
-
-//Dependencies for the target
-png15_LIB_DEPENDS:STATIC=general;/home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a;
-
-//Dependencies for the target
-png15_static_LIB_DEPENDS:STATIC=general;/home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a;
 
 
 ########################
@@ -315,8 +288,6 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-//Details about finding ZLIB
-FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a][/home/jaw/vsxu/build/win32/dependencies-install/include][v1.2.5()]
 //ADVANCED property for variable: ZLIB_INCLUDE_DIR
 ZLIB_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: ZLIB_LIBRARY

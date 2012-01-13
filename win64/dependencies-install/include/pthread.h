@@ -529,15 +529,15 @@ extern "C"
  * do NOT define PTW32_BUILD, and then the variables/functions will
  * be imported correctly.
  */
-#ifndef PTW32_STATIC_LIB
+/*#ifndef PTW32_STATIC_LIB
 #  ifdef PTW32_BUILD
 #    define PTW32_DLLPORT __declspec (dllexport)
 #  else
 #    define PTW32_DLLPORT __declspec (dllimport)
 #  endif
-#else
-#  define PTW32_DLLPORT
-#endif
+#else*/
+//#  define PTW32_DLLPORT
+/*#endif*/
 
 /*
  * The Open Watcom C/C++ compiler uses a non-standard calling convention

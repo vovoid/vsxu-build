@@ -1,3 +1,0 @@
-/usr/bin/cmake -E remove -f CMakeFiles/png15.dir/objects.a
-/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/png15.dir/objects.a @CMakeFiles/png15.dir/objects1.rsp
-/usr/bin/i686-w64-mingw32-gcc     -shared -o libpng15.dll -Wl,--out-implib,libpng15.dll.a -Wl,--major-image-version,15,--minor-image-version,5 -Wl,--whole-archive CMakeFiles/png15.dir/objects.a -Wl,--no-whole-archive /home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
