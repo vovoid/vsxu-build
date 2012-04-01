@@ -95,3 +95,10 @@ pthreads:
 
 After this is done, get into the lib dir of the install directory and remove all .dll.a and dll's
 to avoid find_package from finding the dll versions. We're aiming at a static linkage.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GLFW:
+  modify and copy the Makefile Example found in this directory into [glfw dir]/lib/win32
+  Check PREFIX and TARGET in the beginning of the file.
+  run: make -f Makefile.win64.cross-mgww64 install
