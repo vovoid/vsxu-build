@@ -7,9 +7,10 @@ SET(CMAKE_CXX_COMPILER i686-w64-mingw32-g++)
 SET(CMAKE_RC_COMPILER i686-w64-mingw32-windres)
 
 # here is the target environment located
-SET(CMAKE_FIND_ROOT_PATH /usr/i686-w64-mingw32 $ENV{VSXU_DEPINST} )
+SET(CMAKE_FIND_ROOT_PATH /usr/i686-w64-mingw32 /usr/lib/gcc/i686-w64-mingw32/4.6/ $ENV{VSXU_DEPINST} )
 set(CMAKE_REQUIRED_INCLUDES $ENV{VSXU_DEPINST}/include )
 set(CMAKE_LIBRARY_PATH $ENV{VSXU_DEPINST}/lib )
+set(VSXU_BUILD_WINDOWS_32 1)
 
 message($ENV{VSXU_DEPINST})
 
