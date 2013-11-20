@@ -13,5 +13,4 @@ export CPATH=$VSXU_DEPINST/include
 cd build
 cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw32.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/
 echo $CPATH
-make -j8
-cpack -G NSIS
+make -j8 && cpack -G NSIS
