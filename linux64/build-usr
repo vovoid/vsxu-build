@@ -13,4 +13,5 @@ mkdir install
 fi
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=/opt/vovoid/vsxu
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=/usr
+make -j8 install

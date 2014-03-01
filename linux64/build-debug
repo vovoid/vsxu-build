@@ -14,3 +14,4 @@ fi
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build
 cmake ../../../vsxu/ -DVSXU_DEBUG=1 -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install
+make -j8 install

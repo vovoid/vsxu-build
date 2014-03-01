@@ -13,4 +13,5 @@ mkdir install
 fi
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_TM=1 -DOPTIMIZATION_FLAGS=1
+make -j8 install
