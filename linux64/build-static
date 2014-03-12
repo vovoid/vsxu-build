@@ -1,18 +1,18 @@
 #!/bin/bash
-if [ -d build ]; then
-rm -rf build
-mkdir build
+if [ -d build_static ]; then
+rm -rf build_static
+mkdir build_static
 else
-mkdir build
+mkdir build_static
 fi
-if [ -d install ]; then
-rm -rf install
-mkdir install
+if [ -d install_static ]; then
+rm -rf install_static
+mkdir install_static
 else
-mkdir install
+mkdir install_static
 fi
 export VSXU_BUILD_BASE_PATH=$PWD
-cd build
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_ENGINE_STATIC=1
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_ENGINE_STATIC=1
+cd build_static
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1
 make -j8 install

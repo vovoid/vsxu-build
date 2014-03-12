@@ -5,15 +5,15 @@ mkdir build
 else
 mkdir build
 fi
-if [ -d install ]; then
-rm -rf install
-mkdir install
+if [ -d install_static ]; then
+rm -rf install_static
+mkdir install_static
 else
-mkdir install
+mkdir install_static
 fi
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_ENGINE_STATIC=1 -DVSXU_DEBUG=1
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install -DVSXU_ENGINE_STATIC=1 -DVSXU_DEBUG=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1 -DVSXU_DEBUG=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1 -DVSXU_DEBUG=1
 
 make -j8 install
