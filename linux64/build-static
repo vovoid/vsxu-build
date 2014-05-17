@@ -13,6 +13,6 @@ mkdir install_static
 fi
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build_static
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1
-cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_ENGINE_STATIC=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1
 make -j8 install
