@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/pngvalid.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/pngvalid.dir/objects.a @CMakeFiles/pngvalid.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc  -O2 -g    -Wl,--whole-archive CMakeFiles/pngvalid.dir/objects.a -Wl,--no-whole-archive  -o pngvalid.exe -Wl,--out-implib,libpngvalid.dll.a -Wl,--major-image-version,0,--minor-image-version,0  libpng15.dll.a /home/jaw/vsxu/build/win32/dependencies-install/lib/libz.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

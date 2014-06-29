@@ -1,0 +1,15 @@
+#!/bin/bash
+if [ -d build ]; then
+echo build exists
+rm -rf build
+mkdir build
+else
+mkdir build
+fi
+export VSXU_BUILD_BASE_PATH=$PWD
+export VSXU_DEPINST=$PWD/dependencies-install
+export CPATH=$VSXU_DEPINST/include
+cd build
+cmake -DVSXU_ONLY_LIBRARIES=1 -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw32.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/
+echo $CPATH
+VERBOSE=1 make -j8
