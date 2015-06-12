@@ -1,16 +1,25 @@
 #!/bin/bash
-if [ -d build ]; then
+
+if [ -d build_static ]; then
 echo build exists
-rm -rf build
-mkdir build
+rm -rf build_static
+mkdir build_static
 else
-mkdir build
+mkdir build_static
 fi
+
+if [ -d install_static ]; then
+rm -rf install_static
+mkdir install_static
+else
+mkdir install_static
+fi
+
 export VSXU_BUILD_BASE_PATH=$PWD
 export VSXU_DEPINST=$PWD/dependencies-install
 export CPATH=$VSXU_DEPINST/include
-cd build
-cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/ -DVSXU_STATIC=1
-cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/ -DVSXU_STATIC=1
+cd build_static
+cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static/ ../../../vsxu/ -DVSXU_STATIC=1
+cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static/ ../../../vsxu/ -DVSXU_STATIC=1
 echo $CPATH
-VERBOSE=1 make 
+VERBOSE=1 make -j8 install
