@@ -1,11 +1,18 @@
 #!/bin/bash
-if [ -d build ]; then
-echo build exists
-rm -rf build
-mkdir build
-else
-mkdir build
-fi
+
+set -e
+
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build"
+
+
+
 export VSXU_BUILD_BASE_PATH=$PWD
 export VSXU_DEPINST=$PWD/dependencies-install
 export CPATH=$VSXU_DEPINST/include

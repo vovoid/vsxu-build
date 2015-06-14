@@ -1,19 +1,16 @@
 #!/bin/bash
 
-if [ -d build_static ]; then
-echo build exists
-rm -rf build_static
-mkdir build_static
-else
-mkdir build_static
-fi
+set -e
 
-if [ -d install_static ]; then
-rm -rf install_static
-mkdir install_static
-else
-mkdir install_static
-fi
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build_static"
+cdir "install_static"
 
 export VSXU_BUILD_BASE_PATH=$PWD
 export VSXU_DEPINST=$PWD/dependencies-install

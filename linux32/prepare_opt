@@ -1,16 +1,16 @@
 #!/bin/bash
-if [ -d build ]; then
-rm -rf build
-mkdir build
-else
-mkdir build
-fi
-if [ -d install ]; then
-rm -rf install
-mkdir install
-else
-mkdir install
-fi
+set -e
+
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build"
+cdir "install"
+
 export VSXU_BUILD_BASE_PATH=$PWD
 cd build
 cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=/opt/vovoid/vsxu

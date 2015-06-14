@@ -1,17 +1,19 @@
 #!/bin/bash
-if [ -d build_static ]; then
-rm -rf build_static
-mkdir build_static
-else
-mkdir build_static
-fi
-if [ -d install_static ]; then
-rm -rf install_static
-mkdir install_static
-else
-mkdir install_static
-fi
+
+set -e
+
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build_static"
+cdir "install_static"
+
 export VSXU_BUILD_BASE_PATH=$PWD
+
 cd build_static
 cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1
 cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1
