@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build_static"
+cdir "install_static"
+
+export VSXU_BUILD_BASE_PATH=$PWD
+cd build_static
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1 -DVSXU_DEBUG=1 -DVSXU_STATIC_AUDIO_SINK=1
+cmake ../../../vsxu/ -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static -DVSXU_STATIC=1 -DVSXU_DEBUG=1 -DVSXU_STATIC_AUDIO_SINK=1
+
+make -j8 install

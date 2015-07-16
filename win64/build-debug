@@ -18,6 +18,6 @@ export LIBRARY_PATH=$VSXU_DEPINST/lib
 echo $VSXU_DEPINST
 cd build
 #cmake --debug-output --debug-trycompile -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/
-cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/
+cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DVSXU_DEBUG=1 -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install/ ../../../vsxu/
 echo $CPATH
-LIBRARY_PATH=$VSXU_DEPINST/lib LINK_LIBRARIES=pthread make
+VERBOSE=1 LIBRARY_PATH=$VSXU_DEPINST/lib LINK_LIBRARIES=pthread make
