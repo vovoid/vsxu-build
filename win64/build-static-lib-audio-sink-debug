@@ -1,0 +1,28 @@
+#!/bin/bash
+
+set -e
+
+function cdir() {
+        if [ -d "$1" ]; then
+                rm -rf "$1"
+        fi
+        mkdir "$1"
+}
+
+cdir "build_static"
+cdir "install_static"
+
+if [ "x$DEP_INSTALL_PATH" == "x" ]; then
+   echo "DEP_INSTALL_PATH must be set; exiting"
+   exit 1
+fi
+
+export VSXU_BUILD_BASE_PATH=$PWD
+export VSXU_DEPINST=$DEPINSTALL
+export PKG_CONFIG_PATH=$DEP_INSTALL_PATH/lib/pkgconfig
+export CPATH=$VSXU_DEPINST/include
+
+cd build_static
+cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static/ ../../../vsxu/ -DVSXU_STATIC=1 -DVSXU_WINDOWS_LIB_BUILD=1 -DVSXU_STATIC_AUDIO_SINK=1 -DVSXU_DEBUG=1 -DVSXU_DEBUG_SYMBOLS=1 
+cmake -DCMAKE_TOOLCHAIN_FILE=$VSXU_BUILD_BASE_PATH/cmake/Toolchain-mingw64.cmake -DCMAKE_INSTALL_PREFIX=$VSXU_BUILD_BASE_PATH/install_static/ ../../../vsxu/ -DVSXU_STATIC=1 -DVSXU_WINDOWS_LIB_BUILD=1 -DVSXU_STATIC_AUDIO_SINK=1 -DVSXU_DEBUG=1 -DVSXU_DEBUG_SYMBOLS=1
+VERBOSE=1 make -j$CONCURRENT install

@@ -7,13 +7,13 @@ SET(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
 SET(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
 
 # here is the target environment located
-SET(CMAKE_FIND_ROOT_PATH /usr/x86_64-w64-mingw32 $ENV{VSXU_DEPINST} )
-set(CMAKE_REQUIRED_INCLUDES $ENV{VSXU_DEPINST}/include )
-set(CMAKE_LIBRARY_PATH $ENV{VSXU_DEPINST}/lib )
+#SET(CMAKE_FIND_ROOT_PATH /usr/x86_64-w64-mingw32 $ENV{VSXU_DEPINST} )
+#set(CMAKE_REQUIRED_INCLUDES $ENV{VSXU_DEPINST}/include )
+#set(CMAKE_LIBRARY_PATH $ENV{VSXU_DEPINST}/lib )
 
 set(VSXU_BUILD_WINDOWS_64 1)
 
-message($ENV{VSXU_DEPINST})
+#message($ENV{VSXU_DEPINST})
 
 # adjust the default behaviour of the FIND_XXX() commands:
 # search headers and libraries in the target environment, search 
