@@ -1,4 +1,0 @@
-/home/jaw/vsxu/build/win64/dependencies/libpng-1.5.7/build/CMakeFiles/png15.dir
-/home/jaw/vsxu/build/win64/dependencies/libpng-1.5.7/build/CMakeFiles/png15_static.dir
-/home/jaw/vsxu/build/win64/dependencies/libpng-1.5.7/build/CMakeFiles/pngtest.dir
-/home/jaw/vsxu/build/win64/dependencies/libpng-1.5.7/build/CMakeFiles/pngvalid.dir

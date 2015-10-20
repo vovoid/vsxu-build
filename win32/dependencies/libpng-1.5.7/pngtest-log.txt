@@ -1,2 +1,0 @@
-============ pngtest pngtest.png ==============
-./test-pngtest.sh: 15: ./pngtest: not found
